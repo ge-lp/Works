@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class AtvTringl {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Informe o primeiro valor do triângulo = ");
+		double v1 = scan.nextDouble();
+		
+		System.out.println("Informe o segundo valor do triângulo = ");
+		double v2 = scan.nextDouble();
+		
+		System.out.println("Informe o terceiro valor do triângulo = ");
+		double v3 = scan.nextDouble();
+		
+		if ((v1 >= v2 + v3) || (v2 >= v1 + v3) || (v3 >= v1 + v2)) {
+			//Não é um triângulo
+	
+		
+		System.out.println("Os lados não formam um triângulo válido");
+		}
+		
+		
+		else if ((v1 == v2) && (v2 == v3)) {
+			//Equilátero (Todos os lados são iguais)
+				
+		
+		System.out.println("Os lados formam um triângulo equilátero!");
+		}
+		
+		else if ((v1 == v2) || (v2 == v3) || (v3 == v1)) {
+			//Isósceles (Possui pelo menos dois lados iguais)
+		
+		
+		System.out.println("Os lados formam um triângulo isósceles!");
+		}
+		
+		else if ((v1 != v2) && (v2 != v3) && (v3 != v1)) {
+			//Escaleno (Nenhum lado é igual)
+		
+		System.out.println("Os lados formam um triângulo escaleno!");
+		}
+		}
+		
+		}
+
