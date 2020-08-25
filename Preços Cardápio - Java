@@ -1,0 +1,48 @@
+import java.util.*;
+public class AtvCardapio {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//O cardápio de uma lanchonete é dado abaixo. Prepare um algoritmo que leia a quantidade de cada item que você consumiu e calcule a conta final:
+		//Hambúrguer.......R$3.00
+		//CheeseBurguer...R$2.50
+		//Fritas..........R$2.50
+		//Refrigerante....R$1.00
+		//Milkshake.......R$3.00
+		
+		Scanner scan = new Scanner(System.in);
+		
+		double Hamb = 3.00;
+		double Cheese = 2.50;
+		double Fritas = 2.50;
+		double Refri = 1.00;
+		double Milk = 3.00;
+		
+		System.out.println("Informe a quantidade de Hambúrguer = ");
+		int h1 = scan.nextInt();
+		
+		System.out.println("Informe a quantidade de CheeseBurguer = ");
+		int c1 = scan.nextInt();
+		
+		System.out.println("Informe a quantidade de Fritas = ");
+		int f1 = scan.nextInt();
+		
+		System.out.println("Informe a quantidade de Refrigerante = ");
+		int r1 = scan.nextInt();
+		
+		System.out.println("Informe a quantidade de Milkshake = ");
+		int m1 = scan.nextInt();
+		
+		double Total = (h1 * Hamb) + (c1 * Cheese) + (f1 * Fritas) + (r1 * Refri) + (m1 * Milk);
+		
+		System.out.println("O total da compra foi: " + Total);
+		
+		
+				
+		
+		
+		
+	}
+
+}
