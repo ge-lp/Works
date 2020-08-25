@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class AtvPaciente {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Informe a temperatura = ");
+		double t1 = scan.nextDouble();
+		
+		System.out.println("Informe a taxa de oxigênio = ");
+		double to = scan.nextDouble();
+		
+		if ((t1 >= 39.0) && (to < 80)){
+			System.out.println("Internar paciente");
+			
+		}else {System.out.println("Liberado");
+		
+		}
+		
+				
+				
+
+	}
+
+}
