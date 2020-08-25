@@ -1,0 +1,34 @@
+import java.util.*;
+public class AtvIdade {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Informe seu nome = ");
+		String n1 = scan.next();
+		
+		System.out.print("Informe sua idade = ");
+		int id1 = scan.nextInt();
+		int dn1 = 2020 - id1;
+		
+		System.out.print("Informe seu nome = ");
+		String n2 = scan.next();
+		
+		System.out.print("Informe sua idade = ");
+		int id2 = scan.nextInt();
+		int dn2 = 2020 - id2;
+		
+		if (id1 <= id2) {
+			System.out.println("A pessoa mais nova é: " + n1);
+			System.out.println("Nasceu no ano de = " + dn1);
+			
+		} else {
+			System.out.println("A pessoa mais nova é: " + n2);
+			System.out.println("Nasceu no ano de = " + dn2);
+		}
+		
+
+	}
+
+}
