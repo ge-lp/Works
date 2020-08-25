@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class AtvSalario {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan = new Scanner(System.in);
+        
+        System.out.println("Digite seu Salario Bruto = ");
+        double salBruto = scan.nextDouble();
+        double desconto = 0;
+        double salLiquido = 0;
+        
+        if (salBruto <= 1372.81) {
+            System.out.println("Salario Bruto = " + salBruto);
+            System.out.println("Desconto = " + desconto);
+            System.out.println("Salario Liquido = " + salBruto);
+        } else if (salBruto <= 2743.25){
+            desconto = salBruto * 0.15;
+            salLiquido = salBruto - desconto;
+            System.out.println("Salario Bruto = " + salBruto);
+            System.out.println("Desconto = " + desconto);
+            System.out.println("Salario Liquido = " + salLiquido);
+        } else {
+            desconto = salBruto * 0.275;
+            salLiquido = salBruto - desconto;
+            System.out.println("Salario Bruto = " + salBruto);
+            System.out.println("Desconto = " + desconto);
+            System.out.println("Salario Liquido = " + salLiquido);
+        }
+
+	}
+
+}
