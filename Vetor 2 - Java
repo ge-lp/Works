@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class Vetor7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Faça um programa que carregue um vetor de seis elementos numéricos inteiros, calcule e mostre:
+		// A) - A quantidade de números pares;
+		// B) - Quais os números pares;
+		// C) - A quantidade de números ímpares;
+		// D) - Quais os números ímpares.
+		
+		int[] vetor;
+        
+        Scanner scan = new Scanner(System.in);
+                
+        vetor = new int[6];
+        int valor = 0;
+        int QntPar = 0;
+        int QntImpar = 0;
+        
+        //Carrega o vetor com as informações do usuário:
+        for(int j = 0 ; j < 6 ; j++) {
+            System.out.println("Digite o valor do vetor na posição " + j + " = ");
+            valor = scan.nextInt();
+            vetor[j] = valor;
+        }
+       
+        //Verificar quais são os pares e ímpares:
+        for(int j = 0; j < 6; j++) {
+         
+                //Exibir quais são os números pares:
+            if (vetor[j] % 2 == 0) {
+        		QntPar = QntPar + 1; //QntPar++
+        		
+        		System.out.println("O Valor = " + vetor[j] + " é um número par!");
+             }
+          
+            //Exibir quais são os números ímpares:
+            else {
+            	 System.out.println("O valor = " + vetor[j] + " é um número ímpar!");
+            	 QntImpar = QntImpar + 1; //QntImpar++
+             }
+        }
+        //Exibir quantidade total de números pares e de números ímpares:
+        System.out.println("A quantidade de números pares é = " + QntPar);
+        System.out.println("A quantidade de números ímpares é = " + QntImpar);
+      
+        }
+    }
