@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class AtvMediaSalari {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Faça um algoritmo que leia os dados de cada empregado: nome, salário por dia e número de dias trabalhados 
+		//de uma firma de 5 empregados. 
+		//Imprima o salário total a ser pago aos empregados e a média dos salários.
+		
+		Scanner scan = new Scanner(System.in);
+        double mediaSalarios = 0;
+
+        //São 5 empregados, logo:
+        for(int i = 1; i<= 5; i++) {
+            System.out.println("Digite seu nome = ");
+            String nome = scan.next();
+            
+            System.out.println("Digite salario por dia = ");
+            double salarioDia = scan.nextDouble();
+            
+            System.out.println("Quantos dias trabalhados = ");
+            int diasTrabalhados = scan.nextInt();
+            
+            double salario = salarioDia * diasTrabalhados;
+            
+            System.out.println("Nome = " + nome + "\n" + "Salário = " + salario + "\n");
+            
+            mediaSalarios = mediaSalarios + salario;
+        }
+        
+        mediaSalarios = mediaSalarios / 5;    
+    
+        System.out.println("Média dos Salarios = " + mediaSalarios);    
+    }
+}
