@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class AtvDsct {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		 Scanner scan = new Scanner(System.in);
+	        
+	        System.out.println("Digite a quantidade de haste de cobre = ");
+	        double qtdeCobre = scan.nextDouble();
+	        
+	        System.out.println("Digite a quantidade de haste de aluminio = ");
+	        double qtdAluminio = scan.nextDouble();
+	        
+	        double totalPecas = qtdeCobre + qtdAluminio;
+	        
+	        double valorTotalHasteCobre =  qtdeCobre * 2;
+	        double valorTotalHasteAluminio = qtdAluminio * 4;
+	        
+	        double valorTotalCompra = valorTotalHasteCobre + valorTotalHasteAluminio;
+	        
+	        double valorFinalTotalCompra = 0;
+	        
+	        if (totalPecas < 5) {
+	            //Nao tem desconto
+	            valorFinalTotalCompra = valorTotalCompra;
+	        }
+	        else if (totalPecas <= 15) {
+	            //Tenho 10% desconto.
+	            valorFinalTotalCompra = valorTotalCompra * 0.9;
+	        }
+	        else if (totalPecas <= 20) {
+	            //Tenho 15% desconto.
+	            valorFinalTotalCompra = valorTotalCompra * 0.85;
+	        }
+	        else {
+	            //Tenho 20% desconto.
+	            valorFinalTotalCompra = valorTotalCompra * 0.80;
+	        }
+	        System.out.println("O valor total da compra = " + valorFinalTotalCompra);
+	    }
+
+	}
