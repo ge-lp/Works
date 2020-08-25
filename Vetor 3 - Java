@@ -1,0 +1,55 @@
+import java.util.Scanner;
+public class Vetor9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Faça um programa que obtenha N números (podem ser inteiros ou não). Após obter os N números,
+		// seu programa deverá exibir o menor, o maior e a média dos valores informados.
+		
+		int[] vetor1;
+        int valor = 0;
+        double media = 0;
+        int menorValor = 0;
+        int maiorValor = 0;
+        
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Digite o tamanho do vetor = ");
+        int tamanho = scan.nextInt();
+
+
+        vetor1 = new int[tamanho];
+        
+        //Carregar os valores do vetor 1:
+        for(int i = 0 ; i < tamanho; i++) {
+            System.out.println("Digite um valor para o vetor 1 = ");
+            valor = scan.nextInt(); 
+            vetor1[i] = valor;
+        }
+        
+        //Calcular a média:
+        for(int i = 0 ; i < tamanho; i++) {
+            media = media + vetor1[i];
+        }
+        media = media/tamanho;
+        System.out.println("A média dos valores do vetor = " + media);
+        
+        
+        //Calcular o menor valor:
+        menorValor = vetor1[0];
+        for(int i = 1 ; i < tamanho; i++) {
+            if(vetor1[i] < menorValor) {
+                menorValor = vetor1[i];
+            }
+        }
+        System.out.println("O menor valor do vetor = " + menorValor);
+        
+        //Calcular o maior valor:
+        maiorValor = vetor1[0];
+        for(int i = 1 ; i < tamanho; i++) {
+            if(vetor1[i] > maiorValor) {
+                maiorValor = vetor1[i];
+            }
+        }
+        System.out.println("O maior valor do vetor = " + maiorValor);
+    }
+}
